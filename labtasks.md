@@ -40,36 +40,28 @@
 
 <details>
   <summary>5. Set the password for "testuser" to "password"</summary>
-  <code>
-    passwd testuser<br/>
-    New password: password<br/>
-    BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word<br/>
-    Retype new password: password<br/>
-    passwd: all authentication tokens updated successfully.
-  </code>
+  <code>passwd testuser</code><br/>
+  <code>New password: password</code><br/>
+  <code>BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word</code><br/>
+  <code>Retype new password: password</code><br/>
+  <code>passwd: all authentication tokens updated successfully.</code>
 </details>
 
 <details>
   <summary>6. Use globbing to show everything in /etc that have a number in their name (use <code>cd /etc</code> to make /etc your current directory)</summary>
-  <code>
-    cd /etc<br/>
-    ls -d *[0-9]*
-  </code>
+  <code>cd /etc</code><br/>
+  <code>ls -d *[0-9]*</code>
 </details>
 
 <details>
   <summary>7. Use <code>ls -l</code> with a pipe to display results page by page. Then use <code>cd</code> without any arguments</summary>
-  <code>
-    ls -l | less<br/>
-    cd
-  </code>
+  <code>ls -l | less</code><br/>
+  <code>cd</code>
 </details>
 
 <details>
   <summary>8. Use vim to create a file named "users" and make sure it contains the names Trevor, Stephen, John, Joe and Hillary</summary>
-  <code>
-    vim users
-  </code>
+  <code>vim users</code>
 </details> 
 
 ***
@@ -90,10 +82,8 @@
 
 <details>
   <summary>11. Move all files that have a name starting with a or b from /tmp/files to /tmp/files/photos</summary>
-  <code>
-    cd /tmp/files/<br/>
-    mv [ab]* photos/
-  </code>
+  <code>cd /tmp/files/</code><br/>
+  <code>mv [ab]* photos/</code>
 </details>
 
 <details>
