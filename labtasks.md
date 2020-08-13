@@ -39,7 +39,7 @@
   Both command and description don't include the word "password" which is why they weren't found
 </details>
 
-<detilas>
+<details>
   <summary>4. As root, create a user named "testuser" using the man page for <code>useradd</code> as reference</summary>
   <code>useradd testuser</code>
 <details>
@@ -66,6 +66,7 @@
   <code>
     ls -l | less
     cd
+  </code>
 </details>
 
 <details>
@@ -82,7 +83,7 @@
 <details>
   <summary>9. Create the following directories: /tmp/files/pictures, /tmp/files/photos and /tmp/files/videos</summary>
   <code>mkdir -p /tmp/files/pictures /tmp/files/photos /tmp/files/videos</code>
-  The <code>-p<code> option ensures that any subfolders that do not exist get created
+  The <code>-p</code> option ensures that any subfolders that do not exist get created
 </details>
 
 <details>
