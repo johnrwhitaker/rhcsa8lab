@@ -115,8 +115,39 @@
 
 ## Level 4
 
+<details>
+  <summary>17. Use head and tail to display the fifth line of the file /etc/passwd</summary>
+  <code>head -n 5 /etc/passwd | tail -n 1</code>
+</details>
 
+<details>
+  <summary>18. Use sed to display the fifth line of the file /etc/passwd</summary>
+  <code>sed -n 5p /etc/passwd</code>
+</details>
+
+<details>
+  <summary>19. Use awk in a pipe to filter the last column out of the results of the command <code>ps aux</code></summary>
+  <code>ps aux | awk '{ print $NF }'</code>
+</details>
+
+<details>
+  <summary>20. Use grep to show all files in /etc that have lines that contain the text 'root' as a word</summary>
+  <code>cd /etc</code><br/>
+  <code>grep '\<root\>' * 2>/dev/null</code>
+</details>
+
+<details>
+  <summary>21. Use grep to show all lines from all files in /etc that contain exactly 3 characters</summary>
+  <code>grep '^...$' * 2>/dev/null</code>
+</details>
+
+<details>
+  <summary>22. Use grep to find all files that contain the string "alex", but make sure that "alexander" is not included in the result</summary>
+  <code>grep '^alex$' * or grep '\<alex\>'</code>
+</details>
 
 ***
 
 ## Level 5
+
+
