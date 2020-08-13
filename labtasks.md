@@ -42,6 +42,8 @@
 <details>
   <summary>4. As root, create a user named "testuser" using the man page for <code>useradd</code> as reference</summary>
   <code>useradd testuser</code>
+</details>
+
 <details>
   <summary>5. Set the password for "testuser" to "password"</summary>
   <code>
