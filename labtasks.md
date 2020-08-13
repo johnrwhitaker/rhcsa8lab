@@ -5,8 +5,8 @@
 <details>
   <summary>1. Set the root password to "rootpassword"</summary>
   <code>
-    sudo passwd root
-    rootpassword
+    sudo passwd root  
+    rootpassword  
     rootpassword
   </code>
 </details>
