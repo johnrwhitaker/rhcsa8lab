@@ -4,19 +4,15 @@
 
 <details>
   <summary>1. Set the root password to "rootpassword"</summary>
-  <code style="display:block; white-space:pre-wrap">
-    sudo passwd root
-    rootpassword
-  </code>
+  <code>sudo passwd root</code><br/>
+  <code>rootpassword</code>
 </details>
 
 <details>
   <summary>2. Create a user "tempuser" with the password "temppassword"</summary>
-  <code>
-    useradd tempuser<br/>
-    passwd tempuser<br/>
-    temppassword<br/>
-  </code>
+  <code>useradd tempuser</code><br/>
+  <code>passwd tempuser</code><br/>
+  <code>temppassword</code>
 </details>
 
 ***
