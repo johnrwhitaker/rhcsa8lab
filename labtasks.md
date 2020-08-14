@@ -23,9 +23,26 @@
   ```
 </details>
 
+<<<<<<< HEAD
 <details>
   <summary>Use the appropriate tools to find the command that you can use to set the system time 1 minute ahead.</summary>
 </details>
+=======
+
+<details>
+  <summary>3. Modify your shell environment so that on every subshell that is started, a variable is set. The name of the variable should be <b>COLOR</b>, and the value should be set to <b>red</b>. Verify that it is working.</summary>
+</details>
+
+<details>
+  <summary>4. Use the appropriate tools to find the command that you can use to set the system time 1 minute ahead.</summary>
+</details>
+
+<details>
+  <summary>5. From your home directory, type the command <code>ls -al wergihl *</code> and ensure that errors as well as regular output are redirected to a file with the name /tmp/lsoutput.</summary>
+</details>
+
+***
+>>>>>>> 6cc818d... added additional lab tasks
 
 <details>
   <summary>From your home directory, type the command <code>ls -al wergihl *</code> and ensure that errors as well as regular output are redirected to a file with the name /tmp/lsoutput</summary>
@@ -33,7 +50,11 @@
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Locate the man page thst shows how to set a password</summary>
+=======
+  <summary>6. Locate the man page thst shows how to set a password</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>man -k password</code><br/>
   There are far to many results here to find what is needed<br/>
   <code>man -k password | grep 1</code><br/>
@@ -47,6 +68,7 @@
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>As root, create a user named "testuser" using the man page for <code>useradd</code> as reference</summary>
   ```bash
   su -
@@ -83,22 +105,60 @@
 
 <details>
   <summary>Use vim to create a file named "users" and make sure it contains the names Trevor, Stephen, John, Joe and Hillary</summary>
+=======
+  <summary>7. As root, create a user named "testuser" using the man page for <code>useradd</code> as reference</summary>
+  <code>useradd testuser</code>
+</details>
+
+<details>
+  <summary>8. Set the password for "testuser" to "password"</summary>
+  <code>passwd testuser</code><br/>
+  <code>New password: password</code><br/>
+  <code>BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word</code><br/>
+  <code>Retype new password: password</code><br/>
+  <code>passwd: all authentication tokens updated successfully.</code>
+</details>
+
+<details>
+  <summary>9. Use globbing to show everything in /etc that have a number in their name (use <code>cd /etc</code> to make /etc your current directory)</summary>
+  <code>cd /etc</code><br/>
+  <code>ls -d *[0-9]*</code>
+</details>
+
+<details>
+  <summary>10. Use <code>ls -l</code> with a pipe to display results page by page. Then use <code>cd</code> without any arguments</summary>
+  <code>ls -l | less</code><br/>
+  <code>cd</code>
+</details>
+
+<details>
+  <summary>11. Use vim to create a file named "users" and make sure it contains the names Trevor, Stephen, John, Joe and Hillary</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>vim users</code>
 </details> 
 
 <details>
+<<<<<<< HEAD
   <summary>Create the following directories: /tmp/files/pictures, /tmp/files/photos and /tmp/files/videos</summary>
+=======
+  <summary>12. Create the following directories: /tmp/files/pictures, /tmp/files/photos and /tmp/files/videos</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>mkdir -p /tmp/files/pictures /tmp/files/photos /tmp/files/videos</code><br/>
   The <code>-p</code> option ensures that any subfolders that do not exist get created
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Copy all files that have a name starting with a, b, or c from /etc to /tmp/files</summary>
+=======
+  <summary>13. Copy all files that have a name starting with a, b, or c from /etc to /tmp/files</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>cp /etc/[a-c]* /tmp/files</code><br/>
   There will be an warning that some subdirectories were not copied because the <code>-r</code> option was not used. This is expect as we only want the files.
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Move all files that have a name starting with a or b from /tmp/files to /tmp/files/photos</summary>
   ```bash
   cd /tmp/files/
@@ -108,30 +168,56 @@
 
 <details>
   <summary>Move all files that have a name starting with c from /tmp/files to /tmp/files/videos</summary>
+=======
+  <summary>14. Move all files that have a name starting with a or b from /tmp/files to /tmp/files/photos</summary>
+  <code>cd /tmp/files/</code><br/>
+  <code>mv [ab]* photos/</code>
+</details>
+
+<details>
+  <summary>15. Move all files that have a name starting with c from /tmp/files to /tmp/files/videos</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>mv c* videos/</code>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Copy all files that have a size smaller than 1000 bytes from /etc to /tmp/files/pictures</summary>
+=======
+  <summary>16. Copy all files that have a size smaller than 1000 bytes from /etc to /tmp/files/pictures</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>find /etc -size -1000c -exec cp {} pictures \;</code>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Create a symbolic link to /var in /tmp/files</summary>
+=======
+  <summary>17. Create a symbolic link to /var in /tmp/files</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>ln -s /var .</code>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Create a compressed archive file of the /home directory</summary>
+=======
+  <summary>18. Create a compressed archive file of the /home directory</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>tar cJvf home.tar.xz /home</code>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Extract the compressed archive with relative file names in /tmp/archive</summary>
+=======
+  <summary>19. Extract the compressed archive with relative file names in /tmp/archive</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>mkdir /tmp/archive; tar xvf home.tar.xz -C /tmp/archive/</code>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Log in as user root. In the home directory of root, create one archive file that contains the contents of the /home directory and the /etc directory. Use the name /root/essentials.tar for the archive file.</summary>
 </details>
 
@@ -146,47 +232,98 @@
 <details>
   <summary>Create a symbolic link in the home directory of the user root that refers to /archive.tar. Use the name link.tar for the symbolic link.</summary>
 </details>
+=======
+  <summary>20. Log in as user root. In the home directory of root, create one archive file that contains the contents of the /home directory and the /etc directory. Use the name /root/essentials.tar for the archive file.</summary>
+</details>
+
+<details>
+  <summary>21. Copy this archive to the /tmp directory. Also create a hard link to this file in the / directory.</summary>
+</details>
+
+<details>
+  <summary>22. Rename the file /essentials.tar to /archive.tar.</summary>
+</details>
+
+<details>
+  <summary>23. Create a symbolic link in the home directory of the user root that refers to /archive.tar. Use the name link.tar for the symbolic link.</summary>
+</details>
+
+<details>
+  <summary>24. Remove the file /archive.tar and see what happened to the symbolic link. Remove the symbolic link also.</summary>
+</details>
+
+<details>
+  <summary>25. Compress the /root/essentials.tar file.</summary>
+</details>
+
+***
+>>>>>>> 6cc818d... added additional lab tasks
 
 <details>
   <summary>Remove the file /archive.tar and see what happened to the symbolic link. Remove the symbolic link also.</summary>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Compress the /root/essentials.tar file.</summary>
 </details>
 
 <details>
   <summary>Use head and tail to display the fifth line of the file /etc/passwd</summary>
+=======
+  <summary>26. Use head and tail to display the fifth line of the file /etc/passwd</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>head -n 5 /etc/passwd | tail -n 1</code>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Use sed to display the fifth line of the file /etc/passwd</summary>
+=======
+  <summary>27. Use sed to display the fifth line of the file /etc/passwd</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>sed -n 5p /etc/passwd</code>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Use awk in a pipe to filter the last column out of the results of the command <code>ps aux</code></summary>
+=======
+  <summary>28. Use awk in a pipe to filter the last column out of the results of the command <code>ps aux</code></summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>ps aux | awk '{ print $NF }'</code>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Use grep to show all files in /etc that have lines that contain the text 'root' as a word</summary>
+=======
+  <summary>29. Use grep to show all files in /etc that have lines that contain the text 'root' as a word</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>cd /etc</code><br/>
   <code>grep 'root' * 2>/dev/null</code>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Use grep to show all lines from all files in /etc that contain exactly 3 characters</summary>
+=======
+  <summary>30. Use grep to show all lines from all files in /etc that contain exactly 3 characters</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>grep '^...$' * 2>/dev/null</code>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Use grep to find all files that contain the string "alex", but make sure that "alexander" is not included in the result</summary>
+=======
+  <summary>31. Use grep to find all files that contain the string "alex", but make sure that "alexander" is not included in the result</summary>
+>>>>>>> 6cc818d... added additional lab tasks
   <code>grep '^alex$' * or grep '\<alex\>'</code>
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>Describe two ways to show line 5 from the /etc/passwd file.</summary>
 </details>
 
@@ -310,10 +447,37 @@
   chmod +t writers
   chown john writers
   ```
+=======
+  <summary>32. Describe two ways to show line 5 from the /etc/passwd file.</summary>
+</details>
+
+<details>
+  <summary>33. How would you locate all text files on your server that contain the current IP address? Do you need a regular expression to do this?</summary>
+</details>
+
+<details>
+  <summary>34. You have just used the sed command that replaces all occurrences of the text Administrator with root. Your Windows administrators do not like that very much. How do you revert?</summary>
+</details>
+
+<details>
+  <summary>35. Assuming that in the ps aux command the fifth line contains information about memory utilization, how would you process the output of that command to show the process that has the heaviest memory utilization first in the results list?</summary>
+</details>
+
+<details>
+  <summary>36. Which command enables you to filter the sixth column of ps aux output?</summary>
+</details>
+
+<details>
+  <summary>37. How do you delete the sixth line from the file ~/myfile?</summary>
+</details>
+
+***
+>>>>>>> 6cc818d... added additional lab tasks
 
 </details>
 
 <details>
+<<<<<<< HEAD
   <summary>
     Ensure that others are denied default permissions to any file user <code>paul</code> creates<br/>
     Create a shared group directory structure <code>/data/profs</code> and <code>/data/students</code>
@@ -449,3 +613,62 @@
   ```
   
 </details>
+
+<details>
+  <summary>Ensure your system is using a YUM repository for base packages as well as application streams</summary>
+
+  ```bash  
+  cd /etc/yum.repos.d/
+  ls
+  cat base.repo
+  cat appstream.repo
+  tail -n l /etc/fstab
+  ```
+
+  Use the last line to ensure that the rhel8.iso is connected to /repo
+
+  ```bash 
+  less redhat.repo
+  ```
+
+</details>
+
+<details>
+  <summary>Find the package that contains the sepolicy program file and install it</summary>
+
+  ```bash
+  yum search sepolicy
+  yum provide */sepolicy
+  ```
+
+</details>
+
+<details>
+  <summary>Install the previous version of PHP</summary>
+
+  ```bash
+  yum module list
+  yum module PHP <VERSIONNUMBER>
+  ```
+
+</details>
+
+<details>
+  <summary>Download the httpd package from the repositories without installing it, and query to see if there any scripts in it</summary>
+
+  ```bash
+  cd ~
+  yumdownloader httpd
+  ls
+  rpm -qp --scripts httpd-<VERSIONINFO>
+  ```
+  
+</details>
+=======
+  <summary>38. Set up SSH-based authentication on server1 and then from server2 SSH to connect to server1</summary>
+</details>
+
+***
+
+## Level 6
+>>>>>>> 6cc818d... added additional lab tasks
