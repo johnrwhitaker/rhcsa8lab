@@ -11,6 +11,7 @@ Vagrant.configure("2") do |config|
 
         server1.vm.provision "ansible" do |ansible|
             ansible.playbook = "server1.yml"
+            ansible.install = false
         end
 
         server1.vm.provision :shell, :inline => "reboot", run: "always"
@@ -26,8 +27,27 @@ Vagrant.configure("2") do |config|
 
         server2.vm.provision "ansible" do |ansible|
             ansible.playbook = "server2.yml"
+            ansible.install = false
         end
 
+<<<<<<< HEAD
+        server1.vm.provision :shell, :inline => "reboot", run: "always"
+    end
+
+    # Server 2 Configuration
+    config.vm.define "server2" do |server2|
+        config.vm.box = "generic/rhel8"
+        server2.vm.network "private_network", ip: "192.168.77.3"
+        server2.vm.provider :virtualbox do |server2|
+            server2.customize ['modifyvm', :id,'--memory', '2048']
+        end
+
+        server2.vm.provision "ansible" do |ansible|
+            ansible.playbook = "server2.yml"
+        end
+
+=======
+>>>>>>> dbaeec9... added more detail to server configurations
         server2.vm.provision :shell, :inline => "reboot", run: "always"
     end
 end
