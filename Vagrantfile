@@ -11,7 +11,6 @@ Vagrant.configure("2") do |config|
 
         server1.vm.provision "ansible" do |ansible|
             ansible.playbook = "server1.yml"
-            ansible.install = false
         end
 
         server1.vm.provision :shell, :inline => "reboot", run: "always"
@@ -27,7 +26,6 @@ Vagrant.configure("2") do |config|
 
         server2.vm.provision "ansible" do |ansible|
             ansible.playbook = "server2.yml"
-            ansible.install = false
         end
 
 <<<<<<< HEAD
