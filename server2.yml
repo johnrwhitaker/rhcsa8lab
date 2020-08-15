@@ -1,14 +1,14 @@
 ---
-- name: Setting Up Server 1
-  hosts: server1
+- name: Setting Up Server 2
+  hosts: server2
   strategy: free
   ignore_errors: true
   gather_facts: false
   tasks:
   - name: Setting Hostname
-    hostname: name=server1.rhcsa8lab.example.com
+    hostname: name=server2.rhcsa8lab.example.com
   - name: Configuring Network
-    shell: nmcli con mod "System eth1" ipv4.addresses 192.168.77.2/24 ipv4.gateway 192.168.77.1 ipv4.dns 8.8.8.8 ipv4.dns-search rhcsa8lab.example.com ipv4.method manual
+    shell: nmcli con mod "System eth1" ipv4.addresses 192.168.77.3/24 ipv4.gateway 192.168.77.1 ipv4.dns 8.8.8.8 ipv4.dns-search rhcsa8lab.example.com ipv4.method manual
   - name: Reloading Network
     service:
       name: NetworkManager
