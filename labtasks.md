@@ -170,7 +170,7 @@
 <details>
   <summary>29. Use grep to show all files in /etc that have lines that contain the text 'root' as a word</summary>
   <code>cd /etc</code><br/>
-  <code>grep '\<root\>' * 2>/dev/null</code>
+  <code>grep 'root' * 2>/dev/null</code>
 </details>
 
 <details>
