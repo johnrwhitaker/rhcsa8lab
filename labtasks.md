@@ -5,13 +5,17 @@
 <details>
   <summary>1. Set the root password to "rootpassword"</summary>
   <code>sudo passwd root</code><br/>
+  <code>Changing password fot user root.</code><br/>
+  <code>rootpassword</code>
+  <code>BAD PASSWORD: The apssword contains the user name in some form</code></br>
   <code>rootpassword</code>
 </details>
 
 <details>
   <summary>2. Create a user "tempuser" with the password "temppassword"</summary>
-  <code>useradd tempuser</code><br/>
-  <code>passwd tempuser</code><br/>
+  <code>sudo useradd tempuser</code><br/>
+  <code>sudo passwd tempuser</code><br/>
+  <code>temppassword</code><br/>
   <code>temppassword</code>
 </details>
 
@@ -48,6 +52,8 @@
 
 <details>
   <summary>7. As root, create a user named "testuser" using the man page for <code>useradd</code> as reference</summary>
+  <code>su -</code><br/>
+  <code><i>root password</i></code><br/>
   <code>useradd testuser</code>
 </details>
 
