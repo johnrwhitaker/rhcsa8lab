@@ -4,7 +4,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
   <summary>Set the root password to "rootpassword"</summary>
+<<<<<<< HEAD
   
+=======
+>>>>>>> f7498a2... updated markdown syntax for code blocks
   ```bash
   sudo passwd root
   Changing password fot user root.
@@ -12,6 +15,7 @@
   BAD PASSWORD: The apssword contains the user name in some form
   rootpassword
   ```
+<<<<<<< HEAD
   
 </details>
 
@@ -33,15 +37,26 @@
   <code>rootpassword</code>
   <code>BAD PASSWORD: The apssword contains the user name in some form</code></br>
   <code>rootpassword</code>
+=======
+>>>>>>> f7498a2... updated markdown syntax for code blocks
 </details>
 
 <details>
   <summary>Create a user "tempuser" with the password "temppassword"</summary>
+<<<<<<< HEAD
   <code>sudo useradd tempuser</code><br/>
   <code>sudo passwd tempuser</code><br/>
   <code>temppassword</code><br/>
   <code>temppassword</code>
 >>>>>>> c24c213... answer corrections
+=======
+  ```bash
+  sudo useradd tempuser
+  sudo passwd tempuser
+  temppassword
+  temppassword
+  ```
+>>>>>>> f7498a2... updated markdown syntax for code blocks
 </details>
 
 <<<<<<< HEAD
@@ -140,31 +155,44 @@
   <summary>7. As root, create a user named "testuser" using the man page for <code>useradd</code> as reference</summary>
 =======
   <summary>As root, create a user named "testuser" using the man page for <code>useradd</code> as reference</summary>
+<<<<<<< HEAD
 >>>>>>> fd21c36... add lab tasks
   <code>su -</code><br/>
   <code><i>root password</i></code><br/>
   <code>useradd testuser</code>
+=======
+  ```bash
+  su -
+  <i>root password</i>
+  useradd testuser
+>>>>>>> f7498a2... updated markdown syntax for code blocks
 </details>
 
 <details>
   <summary>Set the password for "testuser" to "password"</summary>
-  <code>passwd testuser</code><br/>
-  <code>New password: password</code><br/>
-  <code>BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word</code><br/>
-  <code>Retype new password: password</code><br/>
-  <code>passwd: all authentication tokens updated successfully.</code>
+  ```bash
+  passwd testuser
+  New password: password
+  BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+  Retype new password: password
+  passwd: all authentication tokens updated successfully.
+  ```
 </details>
 
 <details>
   <summary>Use globbing to show everything in /etc that have a number in their name (use <code>cd /etc</code> to make /etc your current directory)</summary>
-  <code>cd /etc</code><br/>
-  <code>ls -d *[0-9]*</code>
+  ```bash
+  cd /etc
+  ls -d *[0-9]*
+  ```
 </details>
 
 <details>
   <summary>Use <code>ls -l</code> with a pipe to display results page by page. Then use <code>cd</code> without any arguments</summary>
-  <code>ls -l | less</code><br/>
-  <code>cd</code>
+  ```bash
+  ls -l | less
+  cd
+  ```
 </details>
 
 <details>
@@ -213,6 +241,7 @@
   cd /tmp/files/
   mv [ab]* photos/
   ```
+<<<<<<< HEAD
 </details>
 
 <details>
@@ -224,6 +253,8 @@
 >>>>>>> fd21c36... add lab tasks
   <code>cd /tmp/files/</code><br/>
   <code>mv [ab]* photos/</code>
+=======
+>>>>>>> f7498a2... updated markdown syntax for code blocks
 </details>
 
 <details>
@@ -784,15 +815,17 @@
     * A variable with the name <code>COLOR</code> that is set the the value <code>red</code>
     * Ensure the alias is available in subshells too
   </summary>
-  <code>su -</code><br/>
-  <code>cd /etc/profile.d/</code><br/>
-  <code>vim labenv.sh</code><br/>
-  Inside VIM<br/>
-  <code>i</code>To enter input mode<br/>
-  <code>alias ipconfig='ip addr show'</code><br/>
-  <code>export COLOR=red</code><br/>
-  <code><i>esc</i></code>To enter command mode<br/>
-  <code>:wq</code><br/>
+  ```bash
+  su -
+  cd /etc/profile.d/
+  vim labenv.sh
+  i
+  alias ipconfig='ip addr show'
+  export COLOR=red
+  esc
+  :wq
+  ```
+
   Nothing else to do since aliases are already available in subshells by default. The variable will also be available since it was created with <code>export</code>.
 </details>
 
@@ -836,15 +869,15 @@
     Set their passwords to expire after 60 days<br/>
     Create a group <code>writers</code> and make <code>john</code> and <code>paul</code> members of that group<br/>
     Create a group <code>guitarists</code> and make <code>george</code> a member of that group<br/>
-    Create a group `drummers` and make `ringo` a member of that group<br/>
-    Create a group `band` and make all four users a member of that group as a secondary group<br/>
-    Use input redirection to set the password for these users to `password`<br/>
-    Ensure all these users get a home directory in `/home`
+    Create a group <code>drummers</code> and make <code>ringo</code> a member of that group<br/>
+    Create a group <code>band</code> and make all four users a member of that group as a secondary group<br/>
+    Use input redirection to set the password for these users to <code>password</code><br/>
+    Ensure all these users get a home directory in <code>/home</code>
   </summary>
-  
+  <br/>
   The most efficient way to tackle these tasks is not in the order presented
 
-  ```
+  ```bash
   vim /etc/login.defs
   i
   PASS_MAX_DAYS 60
@@ -871,7 +904,7 @@
 
   If any of the users were already created you would use:
 
-  ```
+  ```bash
   usermod -aG *GROUPNAME*... *USERNAME*
   ```
   
