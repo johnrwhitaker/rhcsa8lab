@@ -5,9 +5,13 @@
 <<<<<<< HEAD
   <summary>Set the root password to "rootpassword"</summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 =======
 >>>>>>> f7498a2... updated markdown syntax for code blocks
+=======
+  
+>>>>>>> 2377348... updated markdown syntax for code blocks
   ```bash
   sudo passwd root
   Changing password fot user root.
@@ -15,6 +19,7 @@
   BAD PASSWORD: The apssword contains the user name in some form
   rootpassword
   ```
+<<<<<<< HEAD
 <<<<<<< HEAD
   
 </details>
@@ -39,6 +44,9 @@
   <code>rootpassword</code>
 =======
 >>>>>>> f7498a2... updated markdown syntax for code blocks
+=======
+  
+>>>>>>> 2377348... updated markdown syntax for code blocks
 </details>
 
 <details>
