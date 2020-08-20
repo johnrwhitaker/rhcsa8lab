@@ -869,7 +869,7 @@
 
   If any of the users were already created you would use:
   ~~~
-  usermod -aG *<GROUPNAME>*... *<USERNAME>*
+  usermod -aG *GROUPNAME*... *USERNAME*
   ~~~
   The -a is for append, without this the groups will be overwritten with what is listed
 </details>
