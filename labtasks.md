@@ -832,15 +832,16 @@
 >>>>>>> fd21c36... add lab tasks
 =======
   <summary>
-    Create 4 users: `john`, `paul`, `george`, and `ringo`<br/>
+    Create 4 users: <code>john</code>, <code>paul</code>, <code>george</code>, and <code>ringo</code><br/>
     Set their passwords to expire after 60 days<br/>
-    Create a group `writers` and make `john` and `paul` members of that group<br/>
-    Create a group `guitarists` and make `george a member of that group<br/>
+    Create a group <code>writers</code> and make <code>john</code> and <code>paul</code> members of that group<br/>
+    Create a group <code>guitarists</code> and make <code>george</code> a member of that group<br/>
     Create a group `drummers` and make `ringo` a member of that group<br/>
     Create a group `band` and make all four users a member of that group as a secondary group<br/>
     Use input redirection to set the password for these users to `password`<br/>
     Ensure all these users get a home directory in `/home`
   </summary>
+  
   The most efficient way to tackle these tasks is not in the order presented
 
   ```
