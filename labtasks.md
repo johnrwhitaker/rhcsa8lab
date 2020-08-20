@@ -832,17 +832,17 @@
 >>>>>>> fd21c36... add lab tasks
 =======
   <summary>
-    * Create 4 users: ~~~john~~~, ~~~paul~~~, ~~~george~~~, and ~~~ringo~~~
+    * Create 4 users: `john`, `paul`, `george`, and `ringo`
     * Set their passwords to expire after 60 days
-    * Create a group ~~~writers~~~ and make ~~~john~~~ and ~~~paul~~~ members of that group
-    * Create a group ~~~guitarists~~~ and make ~~~george a member of that group
-    * Create a group ~~~drummers~~~ and make ~~~ringo~~~ a member of that group
-    * Create a group ~~~band~~~ and make all four users a member of that group as a secondary group
-    * Use input redirection to set the password for these users to ~~~password~~~
-    * Ensure all these users get a home directory in ~~~/home~~~
+    * Create a group `writers` and make `john` and `paul` members of that group
+    * Create a group `guitarists` and make `george a member of that group
+    * Create a group `drummers` and make `ringo` a member of that group
+    * Create a group `band` and make all four users a member of that group as a secondary group
+    * Use input redirection to set the password for these users to `password`
+    * Ensure all these users get a home directory in `/home`
   </summary>
   The most efficient way to tackle these tasks is not in the order presented
-  ~~~
+  ```
   vim /etc/login.defs
   i
   PASS_MAX_DAYS 60
@@ -865,12 +865,12 @@
   useradd -G drummers, band ringo
 
   for i in john paul george ringo; do echo password | passwd --stdin $i; done
-  ~~~
+  ```
 
   If any of the users were already created you would use:
-  ~~~
+  ```
   usermod -aG *GROUPNAME*... *USERNAME*
-  ~~~
+  ```
   The -a is for append, without this the groups will be overwritten with what is listed
 </details>
 >>>>>>> c56e6d0... added lab tasks
