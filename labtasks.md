@@ -2,6 +2,7 @@
 
 <details>
   <summary>Set the root password to "rootpassword"</summary>
+  
   ```bash
   sudo passwd root
   Changing password fot user root.
@@ -9,6 +10,7 @@
   BAD PASSWORD: The apssword contains the user name in some form
   rootpassword
   ```
+  
 </details>
 
 <details>
