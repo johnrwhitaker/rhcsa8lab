@@ -282,3 +282,33 @@
   
   The -a is for append, without this the groups will be overwritten with what is listed
 </details>
+
+<details>
+  <summary>
+    Ensure that files create by user <code>root</code> cannot be acccessed by group or others; files of ordinary users should be readable by the group owners<br/>
+    Create the directories <code>/data/writers</code> and <code>/data/drummers</code><br/>
+    Members of the group <code>writers</code> should be able to read and write files in <code>/data/writers</code>, members of the group <code>drummers</code> should be able to read and write files in <code>/data/drummers</code><br/>
+    No other users should have access to these directories<br/>
+    Users will only be allowed to delete files they have created themselves, but user <code>john</code> is the lead writer and should be able to manage all writers files
+  </summaary>
+
+  ```bash
+  umask 077
+  touch anewfile
+  las -l anewfile
+
+  mkdir -p /data/writers /data/drummers
+
+  cd /data
+  ls -l
+  chgrp writers writers
+  chmod g+rwx writers
+  chgrp drummers drummers
+  chmod g+rwx drummers
+  ls -l
+
+  chmod +t writers
+  chown john writers
+  ```
+
+  </details>
