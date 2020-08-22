@@ -311,4 +311,49 @@
   chown john writers
   ```
 
-  </details>
+</details>
+
+<details>
+  <summary>
+    Ensure that others are denied default permissions to any file user <code>paul</code> creates<br/>
+    Create a shared group directory structure <code>/data/profs</code> and <code>/data/students</code>
+    <ul>
+      <li>Members of the groups have full read and write access to their directories, others has no permissions at all
+      <li>Files creatd in these directories are writeable for all members of the group
+      <li>Users can only delete files they have created themselves
+      <li>Members of group <code>profs</code> have read access to everything in <code>/data/students</code>
+      <li>User <code>john</code> is headmaster and should be able to delete everything in <code>/data/students</code> and <code>/data/profs</code>
+    </ul>
+  </summary>
+
+  ```bash
+  cd /home/paul/
+  ls -a
+  vim .bash_profile
+
+  i
+  umask 007
+  *esc*
+  :wq
+
+  su - paul
+  touch -l paul5
+  ls -l paul5
+  logout
+
+  cd /data
+  mkdir profs students
+  ls -l
+
+  chmod 3770 students/
+
+  chown john:students students/
+  chown john:profs profs/
+  ls -lk
+
+  cd students/
+  ls -l
+  setfacl -m d:g:profs:rx /data/students
+  getfacl .
+  ```
+</details>
