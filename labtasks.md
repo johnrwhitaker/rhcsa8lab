@@ -1000,4 +1000,81 @@
   getfacl .
   ```
 </details>
+<<<<<<< HEAD
 >>>>>>> c270982... added lab tasks
+=======
+
+<details>
+  <summary>Verify your current network configuration</summary>
+
+  ```bash
+  ip a
+  ip route show
+  ```
+
+</details>
+
+<details>
+  <summary>Check that you can ping google.com</summary>
+  
+  ```bash
+  ping google.com
+  ```
+
+</details>
+
+<details>
+  <summary>Use ss to get a list of services currently offered by your server</summary>
+
+  ```bash
+  ss -tuna
+  ```
+
+  If you'd like to see what is running on an open port grep the port number in /etc/services
+
+  ```bash
+  grep 68 /etc/services
+  ```
+
+</details>
+
+<details>
+  <summary>Use nmap to do the same</summary>
+
+  ```bash
+  yum install nmap
+  nmap 192.168.77.3
+  ```
+
+</details>
+
+<details>
+  <summary>Set server1 to a fixed IP address of 192.168.77.10</summary>
+
+  Check current ip configuration
+
+  ```bash
+  ip a
+  ```
+
+  Use nmtui to configure the ethernet interface
+
+  ```bash
+  nmtui
+  ```
+
+</details>
+
+<details>
+  <summary>Set a second ip address on server1 on the same interface to an address of 10.0.0.10/24</summary>
+  
+  This can be done in the same nmtui session as the previous task
+
+</details>
+
+<details>
+  <summary>Reboot server1 and verify the network is still working with these new settings</summary>
+
+  Use <code>ip a</code> again to confirm the updated configuration settings
+</details>
+>>>>>>> d38d8a3... added lab tasks
