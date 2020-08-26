@@ -431,3 +431,21 @@
 
   Use <code>ip a</code> again to confirm the updated configuration settings
 </details>
+
+<details>
+  <summary>Request a list of packages that are installed on server1. In this list see if an FTP server has been isntalled.</summary>
+
+  ```bash
+  yum list installed | grep ftp
+  ```
+
+</details>
+
+<details>
+  <summary>Use the software manager on your server to install nmap</summry>
+
+  ```bash
+  yum install nmap
+  ```
+  
+</details>
