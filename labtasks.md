@@ -757,6 +757,7 @@
   yum install nmap
   ```
   
+<<<<<<< HEAD
 </details>
 
 <details>
@@ -1078,3 +1079,6 @@
   Use <code>ip a</code> again to confirm the updated configuration settings
 </details>
 >>>>>>> d38d8a3... added lab tasks
+=======
+</details>
+>>>>>>> 006c3f0... added lab tasks
