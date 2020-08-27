@@ -758,6 +758,9 @@
   ```
   
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cb99228... added lab tasks
 </details>
 
 <details>
@@ -809,6 +812,7 @@
   rpm -qp --scripts httpd-<VERSIONINFO>
   ```
   
+<<<<<<< HEAD
 </details>
 =======
   <summary>38. Set up SSH-based authentication on server1 and then from server2 SSH to connect to server1</summary>
@@ -1082,3 +1086,6 @@
 =======
 </details>
 >>>>>>> 006c3f0... added lab tasks
+=======
+</details>
+>>>>>>> cb99228... added lab tasks
