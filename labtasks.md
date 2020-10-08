@@ -1,17 +1,8 @@
 # RHCSA 8 Lab Steps
 
 <details>
-<<<<<<< HEAD
-<<<<<<< HEAD
   <summary>Set the root password to "rootpassword"</summary>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  
-=======
->>>>>>> f7498a2... updated markdown syntax for code blocks
-=======
-  
->>>>>>> 2377348... updated markdown syntax for code blocks
+
   ```bash
   sudo passwd root
   Changing password fot user root.
@@ -19,60 +10,24 @@
   BAD PASSWORD: The apssword contains the user name in some form
   rootpassword
   ```
-<<<<<<< HEAD
-<<<<<<< HEAD
   
 </details>
 
 <details>
   <summary>Create a user "tempuser" with the password "temppassword"</summary>
+
   ```bash
   sudo useradd tempuser
   sudo passwd tempuser
   temppassword
   temppassword
   ```
-=======
-  <summary>1. Set the root password to "rootpassword"</summary>
-=======
-  <summary>Set the root password to "rootpassword"</summary>
->>>>>>> fd21c36... add lab tasks
-  <code>sudo passwd root</code><br/>
-  <code>Changing password fot user root.</code><br/>
-  <code>rootpassword</code>
-  <code>BAD PASSWORD: The apssword contains the user name in some form</code></br>
-  <code>rootpassword</code>
-=======
->>>>>>> f7498a2... updated markdown syntax for code blocks
-=======
-  
->>>>>>> 2377348... updated markdown syntax for code blocks
+
 </details>
 
-<details>
-  <summary>Create a user "tempuser" with the password "temppassword"</summary>
-<<<<<<< HEAD
-  <code>sudo useradd tempuser</code><br/>
-  <code>sudo passwd tempuser</code><br/>
-  <code>temppassword</code><br/>
-  <code>temppassword</code>
->>>>>>> c24c213... answer corrections
-=======
-  ```bash
-  sudo useradd tempuser
-  sudo passwd tempuser
-  temppassword
-  temppassword
-  ```
->>>>>>> f7498a2... updated markdown syntax for code blocks
-</details>
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 <details>
   <summary>Use the appropriate tools to find the command that you can use to set the system time 1 minute ahead.</summary>
 </details>
-=======
 
 <details>
   <summary>3. Modify your shell environment so that on every subshell that is started, a variable is set. The name of the variable should be <b>COLOR</b>, and the value should be set to <b>red</b>. Verify that it is working.</summary>
@@ -588,41 +543,12 @@
   chmod +t writers
   chown john writers
   ```
-=======
-  <summary>32. Describe two ways to show line 5 from the /etc/passwd file.</summary>
-=======
-  <summary>Describe two ways to show line 5 from the /etc/passwd file.</summary>
->>>>>>> fd21c36... add lab tasks
+  
 </details>
-
-<details>
-  <summary>How would you locate all text files on your server that contain the current IP address? Do you need a regular expression to do this?</summary>
-</details>
-
-<details>
-  <summary>You have just used the sed command that replaces all occurrences of the text Administrator with root. Your Windows administrators do not like that very much. How do you revert?</summary>
-</details>
-
-<details>
-  <summary>Assuming that in the ps aux command the fifth line contains information about memory utilization, how would you process the output of that command to show the process that has the heaviest memory utilization first in the results list?</summary>
-</details>
-
-<details>
-  <summary>Which command enables you to filter the sixth column of ps aux output?</summary>
-</details>
-
-<details>
-  <summary>How do you delete the sixth line from the file ~/myfile?</summary>
-</details>
-
-<<<<<<< HEAD
-***
->>>>>>> 6cc818d... added additional lab tasks
 
 </details>
 
 <details>
-<<<<<<< HEAD
   <summary>
     Ensure that others are denied default permissions to any file user <code>paul</code> creates<br/>
     Create a shared group directory structure <code>/data/profs</code> and <code>/data/students</code>
@@ -757,10 +683,6 @@
   yum install nmap
   ```
   
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> cb99228... added lab tasks
 </details>
 
 <details>
@@ -811,14 +733,7 @@
   ls
   rpm -qp --scripts httpd-<VERSIONINFO>
   ```
-  
-<<<<<<< HEAD
-</details>
-=======
-  <summary>38. Set up SSH-based authentication on server1 and then from server2 SSH to connect to server1</summary>
-=======
-<details>
-  <summary>Set up SSH-based authentication on server1 and then from server2 SSH to connect to server1</summary>
+
 </details>
 
 <details>
@@ -843,40 +758,6 @@
 </details>
 
 <details>
-<<<<<<< HEAD
-  <summary>Create 4 users: <code>john</code>, <code>paul</code>, <code>george</code>, and <code>ringo</code></summary>
->>>>>>> fd21c36... add lab tasks
-</details>
-
-<details>
-  <summary>Set their passwords to expire after 60 days</summary>
-</details>
-
-<details>
-  <summary>Create a group <code>writers</code> and make <code>john</code> and <code>paul</code> members of that group</summary>
-</details>
-
-<details>
-  <summary>Create a group <code>drummers</code> and make <code>ringo</code> a member of that group</summary>
-</details>
-
-<<<<<<< HEAD
-## Level 6
->>>>>>> 6cc818d... added additional lab tasks
-=======
-<details>
-  <summary>Create a group <code>band</code> and make all four users a member of that group as a secondary group</summary>
-</details>
-
-<details>
-  <summary>Use input redirection to set the password for these users to <code>password</code></summary>
-</details>
-
-<details>
-  <summary>Ensure all these users get a home directory in <code>/home</code></summary>
-</details>
->>>>>>> fd21c36... add lab tasks
-=======
   <summary>
     Create 4 users: <code>john</code>, <code>paul</code>, <code>george</code>, and <code>ringo</code><br/>
     Set their passwords to expire after 60 days<br/>
@@ -923,9 +804,6 @@
   
   The -a is for append, without this the groups will be overwritten with what is listed
 </details>
-<<<<<<< HEAD
->>>>>>> c56e6d0... added lab tasks
-=======
 
 <details>
   <summary>
@@ -955,10 +833,6 @@
   chown john writers
   ```
 
-<<<<<<< HEAD
-  </details>
->>>>>>> 3b3a42c... added lab tasks
-=======
 </details>
 
 <details>
@@ -1082,10 +956,3 @@
 
   Use <code>ip a</code> again to confirm the updated configuration settings
 </details>
->>>>>>> d38d8a3... added lab tasks
-=======
-</details>
->>>>>>> 006c3f0... added lab tasks
-=======
-</details>
->>>>>>> cb99228... added lab tasks
